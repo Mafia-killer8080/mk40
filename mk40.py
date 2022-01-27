@@ -1,3 +1,4 @@
+import os, sys
 if __name__ == "__main__":
 	if len(sys.argv) == 2:
 		if sys.argv[1] == "remove":
@@ -5,8 +6,19 @@ if __name__ == "__main__":
 			exit(" [!] Succesfull Deleted")
 		else:
 			print(" [?] Wellcome : ")
-			exit(" [!] Run : python mk40.py remove")
+			exit(" [!] Run : python file.py remove")
 	try:
 		__import__("mk40").__main_MK()
 	except Exception as e:
 		exit(str(e))
+
+
+	
+	
+	
+	
+		
+
+	
+
+
