@@ -1,16 +1,28 @@
-import os, sys
-if __name__ == "__main__":
-	if len(sys.argv) == 2:
-		if sys.argv[1] == "remove":
-			os.system("rm -f .__apikey__.txt")
-			exit(" [!] Succesfull Deleted")
-		else:
-			print(" [?] Wellcome : ")
-			exit(" [!] Run : python file.py remove")
-	try:
-		__import__("mk40").__main_MK()
-	except Exception as e:
-		exit(str(e))
+import os, platform
+try:
+   import requests
+except:
+   os.system('pip2 install requests')
+
+import requests
+bit = platform.architecture()[0]
+if bit == '64bit':
+    from mk40 import main
+    main()
+elif bit == '32bit':
+    from mk40 import main
+    main()
+
+
+
+
+
+
+
+	
+		
+	
+
 
 
 	
